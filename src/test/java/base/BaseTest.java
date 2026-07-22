@@ -23,8 +23,9 @@ public class BaseTest {
 
     @AfterMethod
     public void teardown() {
-        if (driver != null) {
-            driver.quit();
-        }
+        // TEMPORARILY DISABLED — so browser stays open to observe the flow
+        // if (driver != null) {
+        //     driver.quit();
+        // }
     }
 }
